@@ -20,9 +20,9 @@ function Categories() {
       <Row className="justify-content-between" >
         <Col lg={6} style={{ paddingTop: "10px" }}>
           <Form className="mb-3 text-start d-flex">
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Cards" onChange={handleChange("Video_Card")} />
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} />
+            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />
+            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Cards" onChange={handleChange("Video_Card")} />
+            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} />
           </Form>
         </Col>
 
@@ -40,7 +40,7 @@ function Categories() {
                 Higher to Lower
               </label> <br />
             </div>
-            <Button className="btn btn-sm btn-danger mt-2" onClick={() => setSortPrice(false)}>
+            <Button className="btn btn-sm btn-danger mt-2" type="reset" onClick={() => setSortPrice(false)}>
               Unsorted
             </Button>
           </Form>

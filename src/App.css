@@ -7,15 +7,12 @@ html { overflow-y: scroll; box-sizing: border-box; }
   text-align: center;
 }
 
-.btn:focus {
-  outline: none !important;
+input, button {
+  outline: none!important;
   box-shadow: none !important;
 }
 
-.noShadow input {
-  outline: none !important;
-  box-shadow: none !important;
-}
+
 
 .navbar-link {
   text-decoration: none;
