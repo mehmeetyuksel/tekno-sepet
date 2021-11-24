@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {ProductProvider} from "./contexts/ProductContext"
+import { FavoriteProvider } from './contexts/FavoriteContext';
+import { CartProvider } from './contexts/CartContext';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+  <ProductProvider>
+    <CartProvider>
+      <FavoriteProvider>
+      <BrowserRouter>
+       <App />
+      </BrowserRouter >
+      </FavoriteProvider>
+    </CartProvider>
+  </ProductProvider>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
