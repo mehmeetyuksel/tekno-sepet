@@ -53,7 +53,6 @@ input, button {
   color: #2F3841;
  }
  .action{
-  font-size: 15px !important;
   font-family: Montserrat, ‘Arial’;
   font-weight: 600;
   color: #E44C4C;
@@ -139,7 +138,6 @@ input, button {
  }
  
  .remove{
-  font-size: 10px !important; 
   font-family: Montserrat, ‘Open Sans’;
   font-weight: 600;
   color: #E44C4C;
@@ -153,7 +151,6 @@ input, button {
  }
  .checkout{
   position: relative;
-  float: right;
   margin-right: 2%;
   margin-bottom: 15px;
   width: 28%;
