@@ -44,8 +44,8 @@ function ShoppingBasket() {
                         <div className="total-amount">${cart.reduce(calculateTotal, 0)}</div>
                     </div>
                     </Col>
-                    <Col  xs={12} md={7} lg={3} xl={2} className="ms-auto">
-                    <button className="button">Complete Order</button>
+                    <Col  xs={12} md={7} lg={3} xl={2} style={{float: "right"}}>
+                    <Button className="button">Complete Order</Button>
                     </Col>
                 </div>
                 </Row>
