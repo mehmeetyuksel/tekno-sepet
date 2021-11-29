@@ -1,6 +1,8 @@
 # Live Demo
 
-You can visit and see the demo here, [click](https://tekno-sepet.netlify.app/)
+I recommend you to visit the demo on Heroku, [click](https://tekno-sepet.herokuapp.com/), because Netlify has some bugs on the demo.
+
+You can visit and see the demo also on Netlify, [click](https://tekno-sepet.netlify.app/)  (has some bugs)
 
 ## Getting Started with Create React App
 
