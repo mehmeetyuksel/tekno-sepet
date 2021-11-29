@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCart } from "../contexts/CartContext"
+import {Row,Col, Container, Button} from "react-bootstrap"
 function BasketItem({ product }) {
 
     const { setCart, cart } = useCart();
@@ -10,26 +11,37 @@ function BasketItem({ product }) {
     }
 
     return (
-        <div>
+
+            <Container>
+            <Row>
             <div className="cart-items">
+
+                <Col>
                 <div className="image-box">
-                    <img src={product.product.image} style={{ height: "120px" }} alt="Product Icon" />
+                    <img src={product.product.image} style={{ height: "120px", width: "120px" }} alt="Product Icon" />
                 </div>
+                </Col>
+
+                <Col xs={5} md={3} lg={5}>
                 <div className="about">
                     <h1 className="title">{product.product.name}</h1>
                 </div>
+                </Col>
 
-                <div className="count">{product.amount} Pieces</div>
-
+                <Col>
                 <div className="prices">
+                <div className="count">{product.amount} Pieces</div>
                     <div className="amount">${(product.product.price) * product.amount}</div>
-                    <div className="remove" onClick={() => RemoveProduct(product)}><u>Remove</u></div>
+                    <Button className="remove btn-sm btn-danger" onClick={() => RemoveProduct(product)}>Remove</Button>
                 </div>
+                </Col>
 
 
+            </div> 
+            </Row>
+            <hr />
+            </Container>
 
-            </div> <hr />
-        </div>
     )
 }
 

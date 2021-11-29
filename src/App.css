@@ -10,6 +10,7 @@ html { overflow-y: scroll; box-sizing: border-box; }
 input, button {
   outline: none!important;
   box-shadow: none !important;
+ 
 }
 
 
@@ -47,13 +48,13 @@ input, button {
  }
  .heading{
   font-size: 30px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 700;
   color: #2F3841;
  }
  .action{
-  font-size: 14px;
-  font-family: ‘Open Sans’;
+  font-size: 15px !important;
+  font-family: Montserrat, ‘Arial’;
   font-weight: 600;
   color: #E44C4C;
   cursor: pointer;
@@ -61,9 +62,9 @@ input, button {
  }
 
  .cart-items{
-  margin: 0 auto;
+  margin: 0 auto !important;
+  padding: 0 !important;
   margin-bottom: 5px;
-  width: 95%;
   height: 30%;
   display: flex;
   justify-content: space-between;
@@ -83,10 +84,8 @@ input, button {
  .title{
   padding:0;
   margin: 0;
-  width: 350px;
-  line-height: 10px;
   font-size: 20px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 800;
   color: #202020;
  }
@@ -101,6 +100,7 @@ input, button {
  .counter{
   width: 15%;
   display: flex;
+  font-family: Montserrat, ‘Open Sans’;
   justify-content: space-between;
   align-items: center;
  }
@@ -113,39 +113,34 @@ input, button {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-family: ‘Open Sans’;
+  font-family: Moontserrat, ‘Open Sans’;
   font-weight: 900;
   color: #202020;
   cursor: pointer;
  }
  .count{
   font-size: 20px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 900;
   color: #202020;
  }
 
  .prices{
-  height: 50%;
-  text-align: right;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
  }
  .amount{
-  padding-top: 20px;
-  width: 50px;
-  font-size: 26px;
-  font-family: ‘Open Sans’;
+  font-size: 20px;
+  font-family: Montserrat,‘Open Sans’;
   font-weight: 800;
   color: #202020;
  }
  
  .remove{
-  padding-top: 5px;
-  font-size: 14px;
-  font-family: ‘Open Sans’;
+  font-size: 10px !important; 
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 600;
   color: #E44C4C;
   cursor: pointer;
@@ -170,20 +165,20 @@ input, button {
  }
  .subtotal{
   font-size: 22px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 700;
   color: #202020;
  }
  .items{
   font-size: 16px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 500;
   color: #909090;
   line-height: 10px;
  }
  .total-amount{
   font-size: 36px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, Open Sans;
   font-weight: 900;
   color: #202020;
  }
@@ -196,7 +191,7 @@ input, button {
   border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
-  font-family: ‘Open Sans’;
+  font-family: Montserrat, ‘Open Sans’;
   font-weight: 600;
   color: #202020;
  }

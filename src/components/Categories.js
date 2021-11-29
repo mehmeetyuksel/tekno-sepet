@@ -17,7 +17,7 @@ function Categories() {
 
   return (
     <Container>
-      <Row className="justify-content-between" >
+      <Row>
         <Col lg={6} style={{ paddingTop: "10px" }}>
           <Form className="mb-3 text-start d-flex">
             <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />

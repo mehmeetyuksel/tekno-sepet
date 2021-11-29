@@ -9,13 +9,18 @@ function Favorites() {
     setFavProducts([]);
   }
   return (
-    <div>
-      <Container className="text-center">
 
+      <Container className="text-center">
+     
         {
           favProducts.length > 0 ?
             <Container>
-              <Col> <Button variant="btn btn-sm btn-danger" style={{ float: "right" }} onClick={() => RemoveAll()}>Clean your FavList</Button>  </Col>
+              <Row className="mb-2 mx-auto">
+                <div className="header">
+                    <h2 className="heading">Your Favorite List</h2>
+                    <Button variant="btn btn-sm btn-danger" className="mb-2  float-right" onClick={() => RemoveAll()}>Remove List</Button>      
+                </div>
+                </Row>
               <Row xs={1} lg={4} className="g-1">
 
                 {favProducts.map((product) =>
@@ -39,7 +44,7 @@ function Favorites() {
 
 
       </Container>
-    </div>)
+)
 
 }
 
