@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Live Demo
+
+You can visit and see the demo here, [click](https://tekno-sepet.netlify.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
