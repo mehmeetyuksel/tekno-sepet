@@ -5,8 +5,8 @@ html { overflow-y: scroll; box-sizing: border-box; }
   text-align: center;
 }
 
-input, button {
-  outline: none!important;
+input, button, .no-focus:focus {
+  outline: none !important;
   box-shadow: none !important;
  
 }
@@ -125,7 +125,6 @@ input, button {
  .prices{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
  }
  .amount{

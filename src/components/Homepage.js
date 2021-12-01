@@ -1,15 +1,16 @@
 import React from 'react'
-import { Row, Col, Container } from "react-bootstrap"
+import { Row,Container} from "react-bootstrap"
 import Categories from './Categories'
+import PagePagination from './PagePagination'
 import ProductList from './ProductList'
+
 function Homepage() {
     return (
         <div>
             <Container>
-                <Col>
                     <Row><Categories /></Row>
                     <Row><ProductList /></Row>
-                </Col>
+                    <Row><PagePagination /></Row>
             </Container >
         </div>
     )

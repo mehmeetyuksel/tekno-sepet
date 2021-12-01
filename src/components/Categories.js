@@ -4,7 +4,7 @@ import { useProduct } from '../contexts/ProductContext'
 import { Form, Container, Button, Row, Col, InputGroup, FormControl, CloseButton } from 'react-bootstrap'
 function Categories() {
 
-  const { setCategory, ProductCategory, setSortPrice, SortPrice, searchValue , setSearchValue } = useProduct();
+  const { setCategory, ProductCategory, setSortPrice, SortPrice, searchValue, setSearchValue } = useProduct();
 
   const handleChange = (text) => (e) => {
     setCategory((prev) => ({
@@ -15,7 +15,6 @@ function Categories() {
 
   const handleSearch = (e) => {
     setSearchValue(e.target.value)
-    console.log(e.target.value)
   }
 
 
@@ -26,20 +25,20 @@ function Categories() {
 
         <Col xl={4} xs={12} >
           <Form className="text-start d-flex  justify-content-evenly">
-            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />
-            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Cards" onChange={handleChange("Video_Card")} />
-            <Form.Check  style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} />
+            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />
+            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Cards" onChange={handleChange("Video_Card")} />
+            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} />
           </Form>
         </Col>
 
 
-      <Col xl={4} xs={12} className="mt-1">
-      <InputGroup size="sm" >
-    <InputGroup.Text id="inputGroup-sizing-sm">Search</InputGroup.Text>
-    <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" onChange={handleSearch} value={searchValue} /> 
-    <InputGroup.Text id="basic-addon2"><CloseButton className="closeButton" onClick={() => setSearchValue("")}/> </InputGroup.Text>
-  </InputGroup>
-      </Col>
+        <Col xl={4} xs={12} className="mt-1">
+          <InputGroup size="sm" >
+            <InputGroup.Text id="inputGroup-sizing-sm">Search</InputGroup.Text>
+            <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" onChange={handleSearch} value={searchValue} />
+            <InputGroup.Text id="basic-addon2"><CloseButton className="closeButton" onClick={() => setSearchValue("")} /> </InputGroup.Text>
+          </InputGroup>
+        </Col>
 
 
 
@@ -57,7 +56,7 @@ function Categories() {
                 Higher to Lower
               </label> <br />
             </div>
-            <Button className="btn btn-sm btn-danger py-0"  type="reset" onClick={() => setSortPrice(false)}>
+            <Button className="btn btn-sm btn-danger py-0" type="reset" onClick={() => setSortPrice(false)}>
               Unsorted
             </Button>
           </Form>
