@@ -35,7 +35,8 @@ input, button, .no-focus:focus {
 
  .header{
   margin: auto;
-  width: 90%;
+  width: 100%;
+  padding: 0 !important;
   height: 15%;
   display: flex;
   justify-content: space-between;
@@ -145,6 +146,7 @@ input, button, .no-focus:focus {
  }
  .checkout{
   position: relative;
+  padding: 0 !important;
   margin-right: 2%;
   margin-bottom: 15px;
   width: 28%;
