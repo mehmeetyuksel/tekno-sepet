@@ -4,6 +4,10 @@ I recommend you to visit the demo on Heroku, [click](https://tekno-sepet.herokua
 
 You can visit and see the demo also on Netlify, [click](https://tekno-sepet.netlify.app/)  (has some bugs)
 
+## Tekno-Sepet
+
+It's an e-commerce project created for Ismek by using React. You will see dummy electronic products, prices and details there. You can add products to your favorite list or shopping cart and it allows you to categorize, sort by price and search for a product with words and visit product's page. Generally, React-Bootstrap was used for this project for responsiveness. Other modules was used are Axios, React Router v6. Let me know, if you find a problem.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

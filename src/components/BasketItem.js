@@ -32,7 +32,7 @@ function BasketItem({ product }) {
                         <div className="prices">
                             <div className="count">{product.amount} Pieces</div>
                             <div className="amount">${(product.product.price) * product.amount}</div>
-                            <Button className="remove" variant="danger" size="sm" onClick={() => RemoveProduct(product)}>Remove</Button>
+                            <Button className="remove p-0" variant="danger" size="sm" onClick={() => RemoveProduct(product)}>Remove</Button>
                         </div>
                     </Col>
 

@@ -17,12 +17,12 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link><Link className="navbar-link" to="/">Homepage </Link></Nav.Link>
-            <Nav.Link><Link className="navbar-link" to="/about-us">About Us</Link>
+            <Nav.Link eventKey={2}><Link className="navbar-link" to="/">Homepage </Link></Nav.Link>
+            <Nav.Link eventKey={2}><Link className="navbar-link" to="/about-us">About Us</Link>
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link><Link className="navbar-link" to="/favs">Favorite List &#10084; {favProducts.length}</Link></Nav.Link>
+            <Nav.Link eventKey={2}><Link className="navbar-link" to="/favs">Favorite List &#10084; {favProducts.length}</Link></Nav.Link>
             <Nav.Link eventKey={2}>  <Link className="navbar-link" to="/cart">
               My Cart <i class="bi bi-cart" style={{ color: cart.length > 0 ? "red" : "" }}></i> {cart.length}
             </Link> </Nav.Link>

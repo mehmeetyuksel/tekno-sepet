@@ -24,11 +24,25 @@ function Categories() {
       <Row className="d-flex align-items-center py-2" >
 
         <Col xl={4} xs={12} >
-          <Form className="text-start d-flex  justify-content-evenly">
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboards" onChange={handleChange("Motherboard")} />
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Cards" onChange={handleChange("Video_Card")} />
-            <Form.Check style={{ marginRight: "5px" }} aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} />
-          </Form>
+
+        <Row className="d-flex text-start">
+
+          <Col xl={4} xs={12} >
+            <Form.Check  aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Motherboard ? true : false} label="Motherboard" onChange={handleChange("Motherboard")} />
+        </Col>
+
+        <Col xl={4} xs={12} style={{paddingRight: "0"}}>
+            
+            <Form.Check  aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Video_Card ? true : false} label="Video Card" onChange={handleChange("Video_Card")} /> 
+         </Col>
+            
+            <Col xl={4} xs={12}>
+            <Form.Check aria-label="Checkbox for following text input" defaultChecked={ProductCategory.Processor ? true : false} label="Processors" onChange={handleChange("Processor")} /> 
+
+            </Col>
+          
+
+      </Row>
         </Col>
 
 

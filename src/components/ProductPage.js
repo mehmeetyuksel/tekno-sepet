@@ -31,8 +31,8 @@ function ProductPage() {
         <>
             {
                 state.length > 0 ? <div>
-                    <Card style={{ width: '60%', margin: "0 auto" }}>
-                        <Card.Img variant="top" style={{ height: "500px", width: "60%", margin: "0 auto" }} src={data[0].image} />
+                    <Card style={{ margin: "0 auto" }}>
+                        <Card.Img variant="top" style={{ height: "auto", width: "400px",  maxWidth: "80%",  margin: "0 auto" }} src={data[0].image} />
                         <Card.Body>
                             <Card.Title>{data[0].name}</Card.Title>
                             <Card.Text>
@@ -40,7 +40,7 @@ function ProductPage() {
                             </Card.Text>
 
                             <Card.Footer>
-                                {<Button className="btn" variant="outline-danger" style={{ width: "auto" }} onClick={productExistsOnFavs(data[0].id) ? deleteFavorite : addFavorites}>{productExistsOnFavs(data[0].id) ? <span>Remove &#10084;</span> : <span> Add your FavList &#9825; </span>}</Button>}
+                                {<Button className="btn" variant="outline-danger" style={{ width: "auto" }} onClick={productExistsOnFavs(data[0].id) ? deleteFavorite : addFavorites}>{productExistsOnFavs(data[0].id) ? <span>Remove &#10084;</span> : <span> Add your Favorite List &#9825; </span>}</Button>}
                             </Card.Footer>
                         </Card.Body>
                     </Card>
