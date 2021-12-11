@@ -24,7 +24,7 @@ function NavigationBar() {
           <Nav>
             <Nav.Link eventKey={2}><Link className="navbar-link" to="/favs">Favorite List &#10084; {favProducts.length}</Link></Nav.Link>
             <Nav.Link eventKey={2}>  <Link className="navbar-link" to="/cart">
-              My Cart <i class="bi bi-cart" style={{ color: cart.length > 0 ? "red" : "" }}></i> {cart.length}
+              My Cart <i className="bi bi-cart" style={{ color: cart.length > 0 ? "red" : "" }}></i> {cart.length}
             </Link> </Nav.Link>
           </Nav>
 
